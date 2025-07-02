@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test 2</title>
+    
+</head>
+<body>
+    
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+#btn1 {
+background-color: blue;
+color: white;
+padding: 10px 15px;
+font-size: 2rem;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+}
+
+
+.calculator {
+    font-size: 0;
+    
+}
+#calc-head {
+    text-align: center;
+}
+#calc-input {
+    width: 350px;
+    height: 100px;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    
+}
+#calc-body {
+    width: 350px;
+    margin: 0 auto;
+}
+.btn {
+    width: 87px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+
+}
+
+.btn:hover {
+    transition-duration: 0.6s;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 5px;
+
+}
+input:focus {
+    background-color: red;
+    color: white;
+}
+::selection {
+    background-color: tomato;
+}
+
+.section1 {
+    background-color: green;
+    float: left;
+    margin-bottom: 10px;
+}
+.section2 {
+    background-color: orange;
+    float: right;
+    margin-bottom: 10px;
+}
+.section3 {
+    background-color: yellow;
+    clear: both;
+    padding: 10px;
+}
+.menu-bar {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(30, 138, 138);
+
+}
+.menu-bar ul {
+    
+}
+.menu-bar ul li {
+    list-style-type: none;
+    float: right;
+    padding: 10px;
+}
+.menu-bar ul li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+.menu-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+
+<body>
+    
+<h2>Hi this is my first javascript</h2>
+<button id="btn1" type="button" onclick="document.getElementById('demo').innerHTML = Date()">Date and Time</button>
+
+<p id="demo"></p>
+
+
+<button id="btn2">Button Two</button>
+<button id="btn3">Button Three</button>
+<p id="para1"></p>
+<p id="para2"></p>
+<p id="para3"></p>
+<p id="para4"></p>
+
+
+
+<h1 style="text-align: center;">Calculator</h1>
+<div class="calculator">
+    <div id="calc-head">
+        <input id="calc-input" type="text">
+    </div>
+    <div id="calc-body">
+        <div>
+            <input type="button" class="btn" value="C" onclick="clearAll()">
+            <input type="button" class="btn" value="CC" onclick="clearAll()">
+            <input type="button" class="btn" value="%" onclick="buttons('%')">
+            <input type="button" class="btn" value="/" onclick="buttons('/')">
+        </div>
+        <div>
+            <input type="button" class="btn" value="7" onclick="buttons('7')">
+            <input type="button" class="btn" value="8" onclick="buttons('8')">
+            <input type="button" class="btn" value="9" onclick="buttons('9')">
+            <input type="button" class="btn" value="*" onclick="buttons('*')">
+        </div>
+        <div>
+            <input type="button" class="btn" value="4" onclick="buttons('4')">
+            <input type="button" class="btn" value="5" onclick="buttons('5')">
+            <input type="button" class="btn" value="6" onclick="buttons('6')">
+            <input type="button" class="btn" value="-" onclick="buttons('-')">
+        </div>
+        <div>
+            <input type="button" class="btn" value="1" onclick="buttons('1')">
+            <input type="button" class="btn" value="2" onclick="buttons('2')">
+            <input type="button" class="btn" value="3" onclick="buttons('3')">
+            <input type="button" class="btn" value="+" onclick="buttons('+')">
+        </div>
+        <div>
+            <input type="button" class="btn" value="0" onclick="buttons('0')">
+            <input type="button" class="btn" value="00" onclick="buttons('00')">
+            <input type="button" class="btn" value="." onclick="buttons('.')">
+            <input type="button" class="btn" value="=" onclick="calculation()">
+        </div>
+    </div>
+
+</div>
+<br>
+
+<input type="text">
+<div class="demo">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis aliquid sunt necessitatibus consequuntur? Iure quidem tempora veniam numquam. Nulla molestiae expedita atque neque reprehenderit assumenda totam, nemo hic quis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis aliquid sunt necessitatibus consequuntur? Iure quidem tempora veniam numquam. Nulla molestiae expedita atque neque reprehenderit assumenda totam, nemo hic quis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis aliquid sunt necessitatibus consequuntur? Iure quidem tempora veniam numquam. Nulla molestiae expedita atque neque reprehenderit assumenda totam, nemo hic quis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis aliquid sunt necessitatibus consequuntur? Iure quidem tempora veniam numquam. Nulla molestiae expedita atque neque reprehenderit assumenda totam, nemo hic quis?</p>
+</div>
+
+<div class="section1"><h1>Bangladesh </h1></div>
+<div class="section2"><h1>masud </h1></div>
+<div class="section3"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod placeat repellat nihil aut perspiciatis accusamus rem corrupti dolor, vel similique nam pariatur enim aliquid, atque repudiandae laboriosam? Hic distinctio est quae numquam culpa sit, accusantium earum iure doloremque, fugit nesciunt placeat maxime similique porro tenetur! Tenetur facilis mollitia eum officia animi cumque aspernatur, minima a dolor fuga illo! Corrupti quisquam incidunt autem, error porro a similique consequatur ratione neque necessitatibus consequuntur doloribus velit tempora! Saepe voluptatibus dolor dolores quia!</p></div>
+
+
+<div class="menu-bar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Our mission</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+let para1 = document.getElementById("para1");
+let para2 = document.getElementById("para2");
+let para3 = document.getElementById("para3");
+let para4 = document.getElementById("para4");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+btn2.addEventListener("click", function(){
+    let x = 0;
+    setInterval(() => {
+        x++;
+        if(x >= 11){
+            x = 1;
+            para1.textContent = x;
+        }else {
+            para1.textContent = x;
+        }
+    }, 1000);
+});
+btn3.addEventListener("click", function(){
+    let randnum = Math.floor(Math.random() * 5) + 1;
+    para2.textContent = randnum;
+});
+
+let calcInput = document.getElementById("calc-input");
+
+function buttons(z){
+    calcInput.value += z;
+
+}
+
+function calculation(){
+    let m = calcInput.value;
+    let evl = eval(m);
+    calcInput.value = evl;
+}
+function clearAll(){
+    calcInput.value = "";
+}
+
+</script>
+
+</body>
+</html>
