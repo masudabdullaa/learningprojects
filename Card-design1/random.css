@@ -1,0 +1,104 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: var(--primaryFont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor);
+}
+:root {
+    --primaryFont: "Quicksand", sans-serif;
+    --secondaryFont: "Josefin Sans", sans-serif;
+    --bgColor: rgb(247, 215, 232);
+    --buttonColor: rgb(0, 92, 128);
+    --lightGrey: lightgrey;
+    --gray: rgb(163, 163, 163);
+
+    
+    
+}
+.card-container {
+    width: 600px;
+    display: flex;
+}
+.card-image {
+    flex-basis: 50%;
+    
+}
+.card-image img {
+    max-width: 100%;
+    border-radius: 10px 0 0 10px;
+    display: block;
+}
+.card-body {
+    flex-basis: 50%;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+    
+}
+.card-body h5 {
+    color: var(--gray);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+.card-body h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.card-body p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.card-body button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--buttonColor);
+    font-size: 16px;
+
+}
+.card-body button:hover {
+    transition-duration: 0.6s;
+    background-color: rgb(22, 110, 168);
+}
+.card-body button i {
+    margin-right: 5px;
+    position: relative;
+    top: 0.5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .card-container {
+    width: 90%;
+    flex-direction: column;
+}
+.card-image {
+    flex-basis: 100%;    
+}
+.card-image img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    flex-basis: 100%;
+    border-radius: 0 0 10px 10px;
+    
+}
+    
+}
