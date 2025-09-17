@@ -1,0 +1,248 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    background-image: radial-gradient(rgb(202, 199, 199), rgb(240, 240, 240));
+}
+nav {
+    background-color: #b6b6b6;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+nav ul li {
+    padding: 10px;
+}
+nav ul li a {
+    color: #000;
+}
+nav ul li a i {
+    margin-right: 5px;
+    color: rgb(3, 130, 134);
+
+}
+.fa-sign-out {
+    color: red;
+}
+.nav2 {
+    display: flex;
+    border: 5px solid #fff;
+}
+.col1 {
+    height: 100vh;
+    width: 200px;
+    border: 5px solid #bbbaba;
+
+}
+.col1 ul li {
+    padding: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+}
+.col1 ul {
+    margin: 5px;
+    display: inline-block;
+    background-color: rgb(194, 193, 193);
+    
+}
+.col1 ul li a {
+    color: #000;
+}
+.col1 ul li a i {
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgb(194, 193, 193);
+    
+}
+.col2 {
+    writing-mode: vertical-lr;
+    background-color: gray;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+.col2 ul {
+    
+}
+.col2 ul li {
+    padding: 5px;
+}
+.col2 ul li a {
+    color: #000;
+    
+}
+.col2 ul li a i {
+    color: #fff;
+}
+.col3 {
+    width: 100%;
+}
+.col3 p {
+    
+}
+.col3_cards1 {
+    display: flex;
+}
+.card1 {
+    margin: 5px;
+    border: 2px solid gray;
+    padding: 5px;
+    height: 130px;
+}
+.card1 p {
+    color: rgb(0, 79, 116);
+    padding: 0 5px;
+}
+.card1 label {
+    display: block;
+    padding: 5px;
+    margin: 0 5px;
+}
+.card1 input {
+    margin: 0 20px;
+    float: right;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #c2c1c1;
+    border: 1px solid lightblue;
+}
+.card1 input[type="number"]{
+    width: 100px;
+
+}
+.card2 {
+    margin: 5px;
+    border: 2px solid gray;
+    padding: 5px;
+}
+.card2 p {
+    color: rgb(0, 79, 116);
+}
+.card2 label {
+    display: block;
+    padding-right: 100px;
+    padding-top: 5px;
+    margin-right: 100px;
+}
+.card2 .print {
+    padding: 2px 5px;
+    float: right;
+    background-color: #bbbaba;
+    border: 2px solid #616161;
+    border-radius: 3px;
+}
+.card3 {
+    margin: 5px;
+    border: 2px solid gray;
+    padding: 5px;
+    
+}
+.card3 p {
+    display: block;
+    color: rgb(0, 79, 116);
+}
+.card3 label {
+    display: block;
+    padding-top: 5px;
+}
+.card3 span {
+    float: right;
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 100px;
+    color: rgb(0, 79, 116);
+}
+.col3_cards2 {
+    display: flex;
+}
+.card4 {
+    margin: 5px;
+    border: 2px solid gray;
+    padding: 5px;
+    width: 335px;
+    
+}
+.card4 p {
+    color: rgb(0, 79, 116);
+}
+.card4_blankpara {
+    padding: 14px;
+    background-color: #8d8d8d;
+}
+.card5 {
+    margin: 5px;
+    border: 2px solid gray;
+    background-color: rgb(187, 185, 185);
+    padding: 5px;
+}
+.card5 p {
+    margin-bottom: 5px;
+}
+.card5_button2 a {
+    color: #000;
+    background-color: #e7e4e4;
+    padding: 3px;
+    
+}
+.card5 table {
+    margin: 5px 0;
+    border: 2px solid gray;
+    border-collapse: collapse;
+    background-color: #ddd;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    padding: 5px;
+    background-color: lightblue;
+}
+
+tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+.buttons {
+    border-top: 3px solid #ddd;
+    border-left: 3px solid #ddd;
+    margin-top: 5px;
+}
+.buttons a {
+    background-color: #a5a4a4;
+    color: #000;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 1px 2px 1px;
+}
+.buttons a i {
+    color: #d3d2d2;
+    box-shadow: 0 1px 2px 1px gray;
+}
+
+#col3 {
+    border: 3px solid #616161;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+

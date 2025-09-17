@@ -1,0 +1,62 @@
+@media screen and (max-width: 700px) {
+   nav ul {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+    
+.nav2 {
+    display: block;
+}
+.col1 {
+    width: 100%;
+}
+.col3_cards1 {
+    display: block;
+
+}
+.col3_cards2 {
+    display: block;
+
+}
+
+.card4 {
+    width: 100%;
+}
+.card5 {
+    width: 100%;
+}
+.card5 table {
+    
+    
+}
+.col1 {
+    height: auto;
+}
+
+.col2 {
+    writing-mode: horizontal-tb;
+    background-color: gray;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+
+.buttons {
+    
+}
+.buttons a {
+    display: block;
+    margin-top: 5px;
+
+}
+.buttons a i {
+    
+}
+
+
+footer {
+    display: block
+}
+
+
+}

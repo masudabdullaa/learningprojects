@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iStock Dashboard</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard_responsive.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> HouseKeeping</a></li>
+            <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Portfolio</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Trading</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Panel Broking</a></li>
+            <li><a href="#"><i class="fa fa-thumb-tack" aria-hidden="true"></i> CDBL</a></li>
+            <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i> General Ledger</a></li>
+            <li><a href="#"><i class="fa fa-eur" aria-hidden="true"></i> Cashbook</a></li>
+            <li><a href="#"><i class="fa fa-file" aria-hidden="true"></i> Reports</a></li>
+            <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> System Settings</a></li>
+            <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a></li>
+            <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    <div class="nav2">
+        <div class="col1">
+            <ul>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> House Keeping</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> Investor</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> Trading</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> CDBL</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> Trading Cashbook</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> Cashbook</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> General Ledger</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> Reports</a></li>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> System Settings</a></li>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul>
+                <li><a href="#"><i class="fa fa-sort-desc" aria-hidden="true"></i> Main Menu</a></li>
+            </ul>
+        </div>
+        <div id="col3">
+            <div class="col3">
+                <p>InvestorSummary</p>
+                <div class="col3_cards1">
+                    <div class="card1">
+                        <p>Search By</p>
+                        <form action="">
+                            <label for="number">Account Code :
+                                <input type="number">
+                            </label>
+                            <label for="number">BO Number :
+                                <input type="text">
+                            </label>
+                            <label for="name">Name : 
+                                <input type="text">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="card2">
+                        <p>Investor Information</p>
+                        <label for="name">Name :</label>
+                        <label for="name">A/C Type :</label>
+                        <label for="name">Cash Balance :</label>
+                        <label for="name">Contact :</label>
+                        <label for="name">Investor Group :</label>
+                        <label for="name">BO Number :</label>
+                        <button class="print"><i class="fa fa-print" aria-hidden="true"></i> Print</button>
+                    </div>
+                    <div class="card3">
+                        <p>Investment Status</p>
+                        <label for="name">Unclear Check : <span>0.00 BDT</span></label>
+                        <label for="name">Immatured Sale : <span>0.00 BDT</span></label>
+                        <label for="name">Unrealized G/L : <span>0.00 BDT</span></label>
+                        <label for="name">Market Value : <span>0.00 BDT</span></label>
+                        <label for="name">Total Equity : <span>0.00 BDT</span></label>
+                        <label for="name">Exposure Status : <span>0 (N/A)</span></label>
+                    </div>
+                </div>
+                <div class="col3_cards2">
+                    <div class="card4">
+                        <p>Investors</p>
+                        <p class="card4_blankpara"></p>
+                        <div class="card4_head1"></div>
+                        <div class="card4_head2"></div>
+                        <div class="card4_body"></div>
+                    </div>
+                    <div class="card5">
+                        <p>Stock Ledger</p>
+                        <div class="card5_button2">
+                            <a href="#">Graphical View</a>
+                            <a href="#">Tabular View</a>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>Instrument</th>
+                                <th>Total</th>
+                                <th>Saleable</th>
+                                <th>Avg Cost</th>
+                                <th>Total Cost</th>
+                                <th>Market Rate</th>
+                                <th>Market Value</th>
+                                <th>Realized Gain</th>
+                                <th>Unrealized Gain</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="card5_button2">
+                            <a href="#">Stock Ledger</a>
+                            <a href="#">Investment Segment</a>
+                            <a href="#">Investor Signature</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="buttons">
+                    <a href="#">BrokerSummary <i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                    <a href="#">MarketAnalysis <i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                    <a href="#">TodaysOrder <i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <p>Ready</p>
+        <p>Trading System : FlexTrade | Current Period : June - 2025 | Server : n3star | DB : KE-iSBBackOffice | User : bosl | Login Time : Monday, September 15, 2025 5:08:35 PM</p>
+    </footer>
+
+
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
