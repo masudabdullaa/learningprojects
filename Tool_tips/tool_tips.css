@@ -1,0 +1,153 @@
+.tool_tip1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    font-weight: bold;
+}
+.tool_tip2 {
+position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    font-weight: bold;
+}
+.tool_tip3 {
+position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    font-weight: bold;
+}
+.tool_tip4 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    font-weight: bold;
+}
+.tool_tip_text1 {
+    position: absolute;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: -10px;
+    top: 50%;
+    margin-left: 10px;
+    visibility: hidden;
+    z-index: 1;
+    font-weight: normal;
+}
+.tool_tip_text2 {
+    position: absolute;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: -10px;
+    top: 50%;
+    margin-left: 10px;
+    visibility: hidden;
+    z-index: 1;
+    font-weight: normal;
+
+}
+.tool_tip_text3 {
+    position: absolute;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: -10px;
+    top: 50%;
+    margin-left: 10px;
+    visibility: hidden;
+    z-index: 1;
+    font-weight: normal;
+
+}
+.tool_tip_text4 {
+    position: absolute;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: -10px;
+    top: 50%;
+    margin-left: 10px;
+    visibility: hidden;
+    z-index: 1;
+    font-weight: normal;
+    opacity: 0.6;
+}
+.tool_tip1:hover .tool_tip_text1 {
+    visibility: visible;
+}
+.tool_tip2:hover .tool_tip_text2 {
+    visibility: visible;
+}
+.tool_tip3:hover .tool_tip_text3 {
+    visibility: visible;
+}
+.tool_tip4:hover .tool_tip_text4 {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.6s;
+}
+
+.tool_tip5 {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+    opacity: 0.6;
+}
+.tool_tip5:hover {
+    opacity: 1;
+    transition-duration: 0.6s;
+}
+
+.tooltip_text5 {
+    position: absolute;
+    width: 200px;
+    top: -10px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin-top: -10px;
+    margin-left: 10px;
+    visibility: hidden;
+    z-index: 1;
+}
+.tooltip_text5::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    right: 100%;
+    top: 50%;
+    margin-top: -10px;
+    border-color: transparent black transparent transparent;
+}
+.headArea {
+    background-color: rgb(11, 160, 247);
+    padding: 5px;
+    font-size: 1rem;
+    color: #fff;
+    border-bottom: 1px solid #000;
+}
+.bodyArea {
+    background-color: #ddd;
+    padding: 5px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: normal;
+}
+.tool_tip5:hover .tooltip_text5 {
+    visibility: visible;
+}
