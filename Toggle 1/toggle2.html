@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle2</title>
+    <link rel="stylesheet" href="toggle2.css">
+</head>
+<body>
+<nav>
+
+</nav>
+
+    <div class="buttons">
+        <button class="toggleButton1"></button>
+        <button class="toggleButton2"></button>
+        <button class="toggleButton3"></button>
+        <button class="toggleButton4"></button>
+        <button class="toggleButton5"></button>
+    </div>
+
+
+
+    <script>
+        let toggleButton1 = document.querySelector(".toggleButton1");
+        let toggleButton2 = document.querySelector(".toggleButton2");
+        let toggleButton3 = document.querySelector(".toggleButton3");
+        let toggleButton4 = document.querySelector(".toggleButton4");
+        let toggleButton5 = document.querySelector(".toggleButton5");
+        toggleButton1.addEventListener("click", function(){
+            let nav = document.querySelector("nav");
+            toggleButton1.classList.toggle("navBackground");
+            nav.classList.toggle("navBackground");
+        });
+        toggleButton2.addEventListener("click", function(){
+            let nav = document.querySelector("nav");
+            toggleButton2.classList.toggle("navBackground2");
+            nav.classList.toggle("navBackground2");
+        });
+        toggleButton3.addEventListener("click", function(){
+            let nav = document.querySelector("nav");
+            toggleButton3.classList.toggle("navBackground3");
+            nav.classList.toggle("navBackground3");
+        });
+        toggleButton4.addEventListener("click", function(){
+            let nav = document.querySelector("nav");
+            toggleButton4.classList.toggle("navBackground4");
+            nav.classList.toggle("navBackground4");
+        });
+        toggleButton5.addEventListener("click", function(){
+            let nav = document.querySelector("nav");
+            toggleButton5.classList.toggle("navBackground5");
+            nav.classList.toggle("navBackground5");
+        });
+        
+
+
+    </script>
+</body>
+</html>
