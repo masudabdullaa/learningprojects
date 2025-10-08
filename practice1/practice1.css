@@ -1,0 +1,195 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+.clock {
+    float: right;
+    padding: 10px;
+    border-radius: 6px;
+}
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8, #btn9 {
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid;
+    font-weight: bold;
+
+}
+#btn3:hover, #btn4:hover {
+    background-color: black;
+    color: aliceblue;
+    transition-duration: 0.6s;
+}
+
+.para1 {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+}
+.para1:hover {
+    color: aliceblue;
+    background-color: black;
+}
+img {
+   border-radius: 6px; 
+}
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+form {
+    background-color: orange;
+    padding: 30px;
+    border-radius: 6px;
+    border: 2px solid;
+    margin: 10px auto;
+    width: 300px;
+}
+label {
+    display: block;
+    margin: 5px 0;
+    text-align: left;
+}
+input {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid;
+    width: 100%;
+}
+input[type="text"] {
+    background-color: rgb(189, 172, 175);
+}
+input[type="email"] {
+    background-color: rgb(181, 245, 181);
+}
+input[type="password"] {
+    background-color: pink;
+}
+input[type="submit"] {
+    width: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(4, 155, 206);
+    border: none;
+    padding: 8px;
+}
+input[type="submit"]:hover {
+    background-color: rgb(163, 222, 241);
+    transition-duration: 0.6s;
+}
+
+.bgColorRed {
+    background-color: rgb(214, 76, 76);
+}
+.bgColorBlue {
+    background-color: rgb(87, 87, 190);
+}
+
+.tooltip1 {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: rgb(214, 214, 209);
+    margin: 50px 0;
+}
+.tooltip1:hover {
+    color: orange;
+    transition-duration: 0.6s;
+}
+.tooltip1text {
+    position: absolute;
+    width: 260px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    top: -40px;
+    left: 105%;
+    margin-left: 10px;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+}
+.tooltip1:hover .tooltip1text {
+    visibility: visible;
+}
+.tooltip1text::after {
+    position: absolute;
+    content: "";
+    border: 10px solid;
+    border-color: transparent black transparent transparent;
+    top: 50%;
+    margin-top: -5px;
+    right: 100%;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(167, 96, 233);
+    display: block;
+    margin: 10px auto;
+    max-width: 50%;
+    border: 1px solid white;
+}
+.alert.danger {background-color: rgb(238, 87, 87);}
+.alert.info {background-color: rgb(245, 186, 77);}
+.closebtn1, .closebtn2 {
+    float: right;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    opacity: 1;
+    color: white;
+}
+.closebtn1:hover {
+    color: black;
+}
+.cfirmtext {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 0 5px;
+    color: red;
+    border-left: 5px solid;
+    border-radius: 6px;
+    display: inline-block;
+    background-image: linear-gradient(violet, yellow);
+}
+.prmptext {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 0 5px;
+    color: blue;
+    border-left: 5px solid;
+    border-radius: 6px;
+    display: inline-block;
+    background-image: linear-gradient(violet, yellow);
+}
+.para2 {
+    padding: 10px;
+    background-color: rgb(0, 211, 0);
+    display: inline-block;
+    border-radius: 6px;
+    max-width: 300px;
+    margin-top: 20px;
+
+}
+.closebtn2 {
+    margin-top: -60px;
+}
+.closebtn2:hover {
+    color: black;
+}
