@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <div class="calc_head">
+            <input type="text" id="calcId">
+        </div>
+        <div class="calc_body">
+            <div>
+                <input type="button" class="btn" onclick="clearAll()" value="C">
+                <input type="button" class="btn" onclick="clearAll()" value="CC">
+                <input type="button" class="btn" onclick="buttonAll('%')" value="%">
+                <input type="button" class="btn" onclick="buttonAll('/')" value="/">
+            </div>
+            <div>
+                <input type="button" class="btn" onclick="buttonAll('7')" value="7">
+                <input type="button" class="btn" onclick="buttonAll('8')" value="8">
+                <input type="button" class="btn" onclick="buttonAll('9')" value="9">
+                <input type="button" class="btn" onclick="buttonAll('*')" value="*">
+            </div>
+            <div>
+                <input type="button" class="btn" onclick="buttonAll('4')" value="4">
+                <input type="button" class="btn" onclick="buttonAll('5')" value="5">
+                <input type="button" class="btn" onclick="buttonAll('6')" value="6">
+                <input type="button" class="btn" onclick="buttonAll('-')" value="-">
+            </div>
+            <div>
+                <input type="button" class="btn" onclick="buttonAll('1')" value="1">
+                <input type="button" class="btn" onclick="buttonAll('2')" value="2">
+                <input type="button" class="btn" onclick="buttonAll('3')" value="3">
+                <input type="button" class="btn" onclick="buttonAll('+')" value="+">
+            </div>
+            <div>
+                <input type="button" class="btn" onclick="buttonAll('0')" value="0">
+                <input type="button" class="btn" onclick="buttonAll('00')" value="00">
+                <input type="button" class="btn" onclick="buttonAll('.')" value=".">
+                <input type="button" class="btn" onclick="calculation()" value="=">
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
+
+<!-- so thats it, thanks -->
