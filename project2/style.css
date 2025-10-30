@@ -1,0 +1,426 @@
+body {
+    background-color: #dfdbdc;
+}
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+nav {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px #fff;
+    background-color: rgba(53, 59, 72,1.0);
+}
+.logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+
+}
+.logo a:hover {
+    transition-duration: 0.6s;
+    color: #fff;
+}
+.mainbuttons {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.mainbuttons a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+.mainbuttons a:hover {
+    text-decoration: underline;
+    transition-duration: 0.6s;
+    color: #fff;
+}
+
+/* ------------------ */
+.cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cvimage {
+    width: 50%;
+    padding: 10px;
+
+}
+.cvimage img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+.cvborder {
+    border-right: 5px solid;
+}
+.aboutme {
+    width: 50%;
+    padding: 10px;    
+}
+
+/* ------------------ */
+.imageone {
+    border-radius: 6px;
+    box-shadow: 0 5px 12px #ddd;
+    width: 450px;
+    height: 250px;
+}
+.container1 {
+    position: relative;
+}
+.content1 {
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    top: 100%;
+    display: none;
+}
+.content1 a {
+    display: block;
+}
+.container1:hover .content1 {
+    display: block;
+}
+
+.bottomarea {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.allaccordion {
+    width: 50%;
+    height: 50vh;
+    margin: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.slideshow {
+    width: 50%;
+    height: 50vh;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.borderright {
+    border-right: 1px solid;
+}
+
+
+
+
+
+
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+footer p {
+    width: 50%;
+    color: yellow;
+    text-decoration: none;
+}
+.social {
+    width: 40%;
+}
+.social a {
+    color: gray;
+    padding: 10px;
+    font-size: 1.7rem;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.social a:hover {
+    transition-duration: 0.6s;
+    color: white;
+}
+.clock {
+    width: 10%;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    text-align: center;
+    margin: 10px;
+}
+
+/* -----------------personal details starts---------------------- */
+.personaldetails {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.pphoto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pphoto img {
+    border: 1px solid;
+    margin: 10px 0;
+}
+.details {}
+.details h3 {
+    padding: 10px;
+    background-color: rgb(207, 207, 207);
+    text-decoration: underline;
+}
+.detailsinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.detailstitle {
+    margin-right: 50px;
+}
+.detailsdata {
+    margin-left: 50px;
+}
+
+/* -----------------educational details ends---------------------- */
+
+
+/* ------------------educational details starts-------------------- */
+.personaldetails {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.pphoto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pphoto i {
+    font-size: 10rem;
+    margin: 10px 0;
+    color: rgb(0, 82, 97);
+}
+.details {}
+.details h3 {
+    padding: 10px;
+    background-color: rgb(207, 207, 207);
+    text-decoration: underline;
+}
+.detailsinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.detailstitle {
+    margin-right: 50px;
+}
+.detailsdata {
+    margin-left: 50px;
+}
+.academic, .address1, .address2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* ------------------educational details ends-------------------- */
+/* ------------------contacts form starts-------------------- */
+.contactf {
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px #ddd;
+    background-color: pink;
+    padding: 10px;
+    
+}
+.contactf label {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+.contactf input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+.contactf textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    border-radius: 6px;
+    border: none;
+
+}
+.contactf input[type="submit"] {
+    padding: 15px;
+}
+.contactf input[type="submit"]:hover {
+    transition-duration: 0.6s;
+    background-color: rgb(5, 92, 95);
+    color: white;
+}
+
+
+
+/* ------------------contacts form ends-------------------- */
+.blogsposts {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* ----------------responsiveness ---------------- */
+
+@media screen and (max-width: 768px){
+
+    nav {
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    }
+    .logo {
+    width: 100%;
+    height: 8vh;
+}
+.logo img {
+    height: 100%;
+}
+.mainbuttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.bottomarea {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+}
+.allaccordion {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.slideshow {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.imageone {
+    width: 100%;
+    height: 30vh;
+}
+.borderright {
+    border-right: 1px solid;
+}
+.cv {
+    display: grid;
+    grid-template-columns: 100%;
+}
+.cvimage {
+    width: 100%;
+    text-align: center;
+}
+.cvimage img {
+    width: 70%;
+}
+
+.aboutme {
+    width: 100%;
+}
+
+/* ----------------personal details------------------- */
+.personaldetails {
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+}
+.pphoto {
+
+}
+.pphoto img {
+
+}
+.details {
+    padding: 10px;
+}
+.details h3 {
+
+}
+.detailsinfo {}
+.detailstitle {
+    margin-right: 10px;
+}
+.detailsdata {
+    margin-left: 10px;
+}
+/* ----------------personal details------------------- */
+.contactf {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    text-align: center;
+}
+footer p {
+    width: 100%;
+}
+.social {
+    width: 100%;
+}
+.clock {
+    width: 100%;
+    margin: 10px 0;
+}
+
+}
